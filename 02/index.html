@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ja">
+<!-- ここからhead...headはサイトの情報をまとめる場所です -->
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+  <link rel="stylesheet" href="./don'ttouch/reset.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="tiltedpage-scroll.css">
+  <link rel="stylesheet" href="./css/custom.css">
+  <title>Mysite</title>
+</head>
+<!-- ここまでhead -->
+
+<!-- ここからbody...bodyはブラウザに描画する場所です -->
+
+<!-- ヘッダーの記述 -->
+<header>
+  <a href="./" class="logo">MY SITE</a>
+  <nav>
+    <ul>
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="about.html">ABOUT</a></li>
+      <li><a href="gallery.html">GALLERY</a></li>
+
+      <!-- facebook -->
+      <li><a href="https://www.facebook.com/profile.php?id=100006495363798" target="_blunk"><i class="fab fa-facebook"></i></a></li>
+
+      <!-- twitter -->
+      <li><a href="https://twitter.com/johnmanjiro3rd" target="_blunk"><i class="fab fa-twitter"></i></a></li>
+
+      <!-- instagram -->
+      <li><a href="https://www.instagram.com/toru.nagai/" target="_blunk"><i class="fab fa-instagram"></i></a></li>
+    </ul>
+  </nav>
+</header>
+<!-- ヘッダーここまで -->
+
+<!-- heroの記述 -->
+<div class="hero">
+  <div class="hero-boxes">
+    <h1>Welcome My Site</h1>
+    <p>ようこそ</p>
+  </div>
+</div>
+<!-- heroここまで -->
+
+<!-- homeの記述 -->
+<div class="titled">
+  <div class="main">
+    <div class="target"></div>
+    <div class="target"></div>
+    <div class="target"></div>
+    <div class="target"></div>
+    <div class="target"></div>
+  </div>
+</div>
+
+<div class="box1">
+
+</div>
+<!-- homeここまで -->
+
+<!-- footer始まり-->
+<footer>
+  <p>copyrights(toru nagai)</p>
+  <ul>
+     <li><a href="#">contact me</a></li>
+  </ul>
+</footer>
+<!--footerここまで-->
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"  ></script>
+<script src="jquery.tiltedpage-scroll.min.js"></script>
+<script src="jquery.inview.min.js"></script>
+<script>
+  $(function(){
+    $('.main').tiltedpage_scroll({
+      sectionContainer:'.target',
+      angle:20,
+      opacity:true,
+      outAnimation:true,
+    });
+    $('.box1').on('inview',function(){
+      $('.box1').css('opacity','1');
+    });
+  });
+</script>
+<!-- ここまでbody -->
+</html>

@@ -1,0 +1,61 @@
+.hero {
+  height: 400px; /* 高さを変更するよ */
+  background: linear-gradient(200deg, #008b8b, #ff7f50, #ffff00);
+}
+.gallery-image:hover>a>img{
+  border-radius: 80%;
+  transform: scale(1.3);
+
+}
+.gallery-image2:hover>a>img{
+  transform: scale(1.3);
+}
+footer{
+  height: 100px;
+  background-color: #ffa500;
+  line-height: 60px;
+}
+
+footer p{
+  text-align: center;
+}
+footer ul{
+  text-align: center;
+}
+.myphoto{
+  width:200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.about{
+  position: relative;
+  z-index:1;
+  background-color: #fafafa;
+}
+
+.hero{
+  height: 100vh;
+
+}
+
+.box1{
+  width: 200px;
+  height: 200px;
+  background-color: #000;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.tpd-section{
+  width: 100px;
+  margin: 0 auto;
+  max-width: 500px;
+}
+
+.tps-wrapper{
+  background-image: url("https://www.soccer-king.jp/wp-content/uploads/2015/07/GettyImages-158058346.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
